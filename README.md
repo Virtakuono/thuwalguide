@@ -2,6 +2,14 @@
 
 #Culinarist's guide to Thuwal
 
+Thuwal is one of the most underexploited tourist destinations. This
+magnificent small town offers dozens of options for the traveller keen on buying electronics,
+praying, having their hair cut and more.
+This short guide is a tribute to the pearl of the Hejazi and the 
+restaurants therein.
+All names are reported verbatim as they are
+written on the street signs.
+
 ##The Turkey resteurant.
 
 The turkey resteurant is a neat hole-in-the wall in
