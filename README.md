@@ -1,8 +1,8 @@
 
 
-Culinarist's guide to Thuwal
+#Culinarist's guide to Thuwal
 
-The Turkey restaurant.
+##The Turkey restaurant.
 
 The turkey restaurant is a neat hole-in-the wall in
 the main street of Thuwal. Selection includes tasteful
@@ -21,7 +21,7 @@ Cost: 4/5
 Taste: 4/5
 Ease: 3/5
 
-Bar-B-Que
+##Bar-B-Que
 
 A classic arabic shawarma hole-in-the wall. This place will serve you a delightful
 shawarma for 4 to 5 SAR depending on your preference. The staff speaks little to no english
@@ -35,7 +35,7 @@ Cost: 4/5
 Taste: 3/5
 Ease: 2/5
 
-Istanbul restaurant
+##Istanbul restaurant
 
 One of the classier places in downtown Thuwal, this place actually has chairs and tables.
 The atmosphere is welcoming to the infrequent westerner. This place serves many kinds of skewers
@@ -48,7 +48,7 @@ Cost: 4/5
 Taste: 3/5
 Ease: 5/5
 
-Al Mullah Juice shop
+##Al Mullah Juice shop
 
 The real name of this juice shop eludes the non-arabic speaker, so we will refer to the place as Al Mullah Juice
 shop.
