@@ -2,9 +2,9 @@
 
 #Culinarist's guide to Thuwal
 
-##The Turkey restaurant.
+##The Turkey resteurant.
 
-The turkey restaurant is a neat hole-in-the wall in
+The turkey resteurant is a neat hole-in-the wall in
 the main street of Thuwal. Selection includes tasteful
 turkish treats from the grill and the oven. Here 40 SAR
 will buy you a massive tray of different meats off the skewer
@@ -18,8 +18,12 @@ Overall, the quality of the food was more than satisfactory and the service good
 
 
 Cost: 4/5
+
 Taste: 4/5
+
 Ease: 3/5
+
+[Location](https://www.openstreetmap.org/node/3430566520)
 
 ##Bar-B-Que
 
@@ -31,9 +35,15 @@ counter that allows one to point different kinds of skewers.
 Quality of the shawarma is more than satisfactory, especially if you happen to be a friend
 of coriander and cardamom. Size of the portions could be bigger.
 
+
 Cost: 4/5
+
 Taste: 3/5
+
 Ease: 2/5
+
+[Location](https://www.openstreetmap.org/node/3428758139)
+
 
 ##Istanbul restaurant
 
@@ -45,8 +55,12 @@ Overall a very tasty treat, although a small negative remark goes to the chewine
 of grilled meat and a salad side with plenty of bread for less than 20 SAR
 
 Cost: 4/5
+
 Taste: 3/5
+
 Ease: 5/5
+
+[Location](https://www.openstreetmap.org/node/3430566519)
 
 ##Al Mullah Juice shop
 
@@ -57,7 +71,11 @@ kitsch and use of tin cans as interior elements. Despite the obvious language ba
 receive and deliver an order of fancy three-layer juice, when given a photo of such a drink on Google Image search.
 Compliments to the chef! A juice of the fanciest kind will set you back some 8 SAR.
 
+
 Cost: 3/5
+
 Taste: 3/5
+
 Ease: 2/5
 
+[Location](https://www.openstreetmap.org/node/3430569537)
