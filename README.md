@@ -37,8 +37,7 @@ Ease: 3/5
 
 A classic arabic shawarma hole-in-the wall. This place will serve you a delightful
 shawarma for 4 to 5 SAR depending on your preference. The staff speaks little to no english
-and there is no menu to point fingers at, luckily they have a glass display
-counter that allows one to point different kinds of skewers.
+but sign language will carry you far.
 
 Quality of the shawarma is more than satisfactory, especially if you happen to be a friend
 of coriander and cardamom. Size of the portions could be bigger.
