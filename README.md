@@ -8,7 +8,9 @@ praying, having their hair cut and more.
 This short guide is a tribute to the pearl of the Hejazi and the 
 restaurants therein.
 All names are reported verbatim as they are
-written on the street signs.
+written on the street with the exception of the places that have only
+arabic signs, in which case an arabic-sounding pseudonym that best
+describes the ambience of the restaurant in question has been assigned.
 
 ##The Turkey resteurant.
 
