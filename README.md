@@ -86,3 +86,21 @@ Taste: 3/5
 Ease: 2/5
 
 [Location](https://www.openstreetmap.org/node/3430569537)
+
+## Al Habibi Shwarma
+
+This one-in-all place allows you to sample through the fast food scene of Thuwal using a one
+pit stop strategy.
+Selection is not the widest in Thuwal, but what they have comes in both small and large quantities and
+with or without spicy sauce. Atmosphere is welcoming and there are even a few chairs and tables.
+The all-in-one style of the restaurant is reflected in the shwarmas that have it all, pickles, lettuce, tomato,
+chicken, fries and a rich splatter of mayo. This is definitely the place for those on a diet.
+Service is given with fluent english, two shwarmas and a mango juice will set you back 19 SAR.
+
+Cost: 3/5
+
+Taste: 3/5
+
+Ease: 3/5
+
+[Location](http://www.openstreetmap.org/node/3431860189)
