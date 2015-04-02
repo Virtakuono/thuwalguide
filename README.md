@@ -96,7 +96,7 @@ pit stop strategy.
 Selection is not the widest in Thuwal, but what they have comes in both small and large quantities and
 with or without spicy sauce. Atmosphere is welcoming and there are even a few chairs and tables.
 The all-in-one style of the restaurant is reflected in the shwarmas that have it all, pickles, lettuce, tomato,
-chicken, fries and a rich splatter of mayo. This is definitely the place for those on a diet.
+chicken, fries and a rich splatter of mayo. This is definitely not a place for those on a diet.
 Service is given with fluent english, two shwarmas and a mango juice will set you back 19 SAR.
 
 Cost: 3/5
