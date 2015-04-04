@@ -12,6 +12,18 @@ written on the street with the exception of the places that have only
 arabic signs, in which case an arabic-sounding pseudonym that best
 describes the ambience of the restaurant in question has been assigned.
 
+##Al Hamad restaurant
+
+Also formerly known as the ZamZam restaurant. Word of mouth says
+that the name got changed as the former owner tragically passed away.
+If this is true, Al Hamad restaurant does honor to the old traditions
+set forth by the ZamZam. Food is as good as ever and despite the apparent
+language barrier, ordering is easy and delivery fast.
+They even have a cabinet on the side where westerners can enjoy their food
+with their womenfolk in peace.
+Especially the lamb curry, biryani and daal are recommended.
+A spicy meal of curry and naan costs around 15 SAR.
+
 ##The Turkey resteurant.
 
 The turkey resteurant is a neat hole-in-the wall in
