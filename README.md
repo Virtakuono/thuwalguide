@@ -24,6 +24,14 @@ with their womenfolk in peace.
 Especially the lamb curry, biryani and daal are recommended.
 A spicy meal of curry and naan costs around 15 SAR.
 
+Cost: 5/5
+
+Taste: 5/5
+
+Ease: 4/5
+
+[Location](http://www.openstreetmap.org/node/797787714)
+
 ##The Turkey resteurant.
 
 The turkey resteurant is a neat hole-in-the wall in
