@@ -71,6 +71,22 @@ Ease: 5/5
 
 [Location](https://www.openstreetmap.org/node/3430566519)
 
+##Istanbul restanurant
+
+The southern little sibling of the more centrally located Instanbul restaurant.
+One can actually see the same guy behind the counter of both restaurants.
+Food is quite similar, but the selection slightly smaller than in the Istanbul restaurant.
+Four skewers of meat, a side salad, bowl of tsatsiki and more bread than you could hope for
+will set you back some 30 SAR.
+
+Cost: 4/5
+
+Taste: 3/5
+
+Ease: 5/5
+
+[Location](https://www.openstreetmap.org/node/3430566519)
+
 ##Al Mullah Juice shop
 
 The real name of this juice shop eludes the non-arabic speaker, so we will refer to the place as Al Mullah Juice
