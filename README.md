@@ -142,3 +142,23 @@ Taste: 3/5
 Ease: 3/5
 
 [Location](http://www.openstreetmap.org/node/3431860189)
+
+## Broast Taza
+
+In short, Broast Taza is the thing that enables you to eat Al Baik without going all
+the way to Jeddah and without being pushed against a sweaty crowd.
+Broast Taza serves both deep fried items and soda. What else could a
+Thuwali food connoisseur ever need?
+In addition to a few kinds of what they call "Borast chicken" they also
+serve shrimp and fish, all of which you can eat with the delicious garlic mayonnaise.
+15 SAR will buy a meal that contains enough calories to feed the average cambodian
+family for a week.
+
+Cost: 5/5
+
+Taste: 2/5
+
+Ease: 4/5
+
+[Location](https://www.openstreetmap.org/node/3431860128)
+
