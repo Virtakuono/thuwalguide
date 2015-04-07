@@ -162,3 +162,18 @@ Ease: 4/5
 
 [Location](https://www.openstreetmap.org/node/3431860128)
 
+## Al Shweya
+
+Another one of the cryptic places that only advertises in arabic. Contrary
+to what the sign outdoors might lead you to believe, the clerk knows numbers and "chicken"
+in english perfectly. And what else would you need when buying roasted chicken?
+The interior is inviting and provides seating in both the traditional sit-on-the-floor
+arabic style as well as in chairs. Grilled chickens sell at a slight discount compared to Tamimi.
+
+Cost: 3/5
+
+Taste: 3/5
+
+Ease: 4/5
+
+[Location](https://www.openstreetmap.org/node/3443077366)
