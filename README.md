@@ -168,7 +168,8 @@ Another one of the cryptic places that only advertises in arabic. Contrary
 to what the sign outdoors might lead you to believe, the clerk knows numbers and "chicken"
 in english perfectly. And what else would you need when buying roasted chicken?
 The interior is inviting and provides seating in both the traditional sit-on-the-floor
-arabic style as well as in chairs. Grilled chickens sell at a slight discount compared to Tamimi.
+arabic style as well as in chairs. Grilled chickens sell at a slight discount compared to Tamimi,
+costing 16 SAR a piece.
 
 Cost: 3/5
 
@@ -177,3 +178,21 @@ Taste: 3/5
 Ease: 4/5
 
 [Location](https://www.openstreetmap.org/node/3443077366)
+
+## Al Siyad restaurant
+
+This place might not be the cheapest or the healthiest thuwali restaurant
+but they certainly set the standard of what shrimp should taste like.
+Walk in, pick your selection of fish and shrimp, select your sides and
+come back to collect your fried treat. Like any good Hejazi restaurant,
+you will not be disappointed because there was too little rice. Despite
+the very
+
+
+Cost: 2/5
+
+Taste: 5/5
+
+Ease: 5/5
+
+[Location](https://www.openstreetmap.org/node/3445170769)
