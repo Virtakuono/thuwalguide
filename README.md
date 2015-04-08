@@ -185,8 +185,8 @@ This place might not be the cheapest or the healthiest thuwali restaurant
 but they certainly set the standard of what shrimp should taste like.
 Walk in, pick your selection of fish and shrimp, select your sides and
 come back to collect your fried treat. Like any good Hejazi restaurant,
-you will not be disappointed because there was too little rice. Despite
-the very
+you will not be disappointed because there was too little rice. A large
+meal for two served with fluent english will set you back around 100 SAR.
 
 
 Cost: 2/5
