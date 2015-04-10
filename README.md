@@ -196,3 +196,39 @@ Taste: 5/5
 Ease: 5/5
 
 [Location](https://www.openstreetmap.org/node/3445170769)
+
+## Al Alyadobe Restaurant
+
+The heart and soul of Thuwali food. This place ranks easily among
+the worst in terms of convenience in town. But fear not. One does not
+go to a place like Al Alyadobe for convenience. John F. Kennedy
+is known to have said
+"We choose to go to the Moon in this decade and do the other things,
+not because they are easy, but because they are hard."
+Had JFK known about this restaurant, he surely would have mentioned
+about it alongside the lunar flights,
+as for an average first world
+traveller this place is almost like a lunar landing. Upon entering
+the premises, one faces a new world. Bread dough flying through the
+air, food being stirred on top of something that is best described as
+a huge flame thrower and more. All this carried out by friendly looking
+fellas working in the same happy manner as the seven
+dwarfs in the Disney classic "Snow White". How to order and in which language
+remains as much a mystery as the true name of this restaurant.
+
+One should take this place as more than food, this is an experience.
+Without this immersion into the life of a blue collar worker in Saudi,
+one truly has not seen Thuwal. As one bounces between the
+counters in the restaurant, one sees true masters of their trade using their
+stoves and flipping bread off the oven. Worth seeing even if you are not hungry.
+A hefty chunk of the best bread in town along with tasty we don't exactly know what
+will cost some 12 SAR here.
+
+
+Cost: 5/5
+
+Taste: 3/5
+
+Ease 1/5
+
+[Location](https://www.openstreetmap.org/node/3445170768)
