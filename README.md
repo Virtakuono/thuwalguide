@@ -252,6 +252,6 @@ Cost: 3/5
 
 Taste: 2/5
 
-Ease: 3/5
+Ease: 4/5
 
 [Location](https://www.openstreetmap.org/node/3430568675)
