@@ -232,3 +232,26 @@ Taste: 3/5
 Ease 1/5
 
 [Location](https://www.openstreetmap.org/node/3445170768)
+
+## 4
+
+Yes. This place is really called "4". Or at least that's the only
+character of the western writing system visible on the sign.
+This hole in the wall serves you with all things bread, pizza,
+flat bread and more. Ordering is easy, inside these guys have a list
+of all items being sold along with prices, both in arabic and english.
+So off you go poking fingers, come back in 10 minutes and collect your treat.
+Food might have some quirks, so keep an open mind. The pizza might
+not exactly have tomato sauce in it and the honey on labneh and honey
+bread might not have anything to do with bees and flowers, but hey,
+we'd expect someone naming their restaurant 4 to take some freedoms regarding the dishes
+as well.
+A large pizza will set you back some 23 SAR, small bread based treats around 5 SAR each.
+
+Cost: 3/5
+
+Taste: 2/5
+
+Ease: 3/5
+
+[Location](https://www.openstreetmap.org/node/3430568675)
