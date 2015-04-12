@@ -255,3 +255,29 @@ Taste: 2/5
 Ease: 4/5
 
 [Location](https://www.openstreetmap.org/node/3430568675)
+
+## Al Sayed
+
+The fancy place in town. This is where the cream of Thuwal comes 
+to be seen. Not the cheapest, but the fanciest.
+Pick the fish that fits your liking from a wide variety of options,
+along with shrimps and choose from the numerous options of how to prepare them.
+Enjoy the seafood with a variety of sides in either the open air
+lounge area with men or retreat to the privacy of a booth with
+the womefolk of your tribe.
+How easy it is to place your order in English depends strongly
+on the guy on shift, but in most cases you will get a pretty
+decent service in English. In addition, there is a small booth
+for the sides where you can go and point fingers and order
+that way if you hit the language barrier.
+A tasty and a fulfilling meal will cost you upwards from 50 SAR
+per person and the waiters are happy to box your leftovers.
+
+Cost: 1/5
+
+Taste: 4/5
+
+Ease: 3/5
+
+[Location](http://www.openstreetmap.org/node/563240783)
+
