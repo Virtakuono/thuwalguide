@@ -288,8 +288,10 @@ than the Taza Broast. In Marhaba Broast you can enjoy deep fried delights
 with sugar free soft drinks. The place for the adventurous mind. Upon inspection
 an order of chicken nuggets resulted in fish fingers. Like in Taza Broast, all
 dishes are accompanied by a hefty amount of fries. The consistency of fried
-items is not as crispy as in Taza and especially the fries tend to be of the
-mushy variety.
+items is not as crispy as in Taza.
+
+A large dish of deep fried chicken or fish along with mushy fries and some bread will
+cost you 12 SAR.
 
 Cost: 5/5
 
