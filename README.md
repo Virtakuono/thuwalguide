@@ -279,5 +279,22 @@ Taste: 4/5
 
 Ease: 3/5
 
-[Location](http://www.openstreetmap.org/node/563240783)
+[Location](https://www.openstreetmap.org/node/563240783)
 
+## Marhaba Broast
+
+Surely it does not say much, but this is marginally more health conscious choice
+than the Taza Broast. In Marhaba Broast you can enjoy deep fried delights
+with sugar free soft drinks. The place for the adventurous mind. Upon inspection
+an order of chicken nuggets resulted in fish fingers. Like in Taza Broast, all
+dishes are accompanied by a hefty amount of fries. The consistency of fried
+items is not as crispy as in Taza and especially the fries tend to be of the
+mushy variety.
+
+Cost: 5/5
+
+Taste: 2/5
+
+Ease: 2/5
+
+[Location](https://www.openstreetmap.org/node/3455830210)
