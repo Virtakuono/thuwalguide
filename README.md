@@ -7,10 +7,13 @@ magnificent small town offers dozens of options for the traveller keen on buying
 praying, having their hair cut and more.
 This short guide is a tribute to the pearl of the Hejazi and the 
 restaurants therein.
+
 All names are reported verbatim as they are
 written on the street with the exception of the places that have only
 arabic signs, in which case an arabic-sounding pseudonym that best
 describes the ambience of the restaurant in question has been assigned.
+
+
 
 ##Al Hamad restaurant
 
@@ -300,3 +303,47 @@ Taste: 2/5
 Ease: 2/5
 
 [Location](https://www.openstreetmap.org/node/3455830210)
+
+## The southern crescent
+
+This joint in the heart of South Thuwal might not seem like
+the most easily approachable one, but don't let the appearance fool you.
+Inside, the occasional visitor will be greeted with a nice smile
+by an old arab gentleman smiling with both of his teeth.
+A series of hand-waving and sign language gestures will finally
+enable you to place an order. Unfortunately, the full selection
+available eludes the non-arabic speaker just as much as the
+true name of the restaurant. Glancing over the glass, one may see
+bizarre dough bits and flatbread-omelette-constructions being made.
+When tried, the sign language random number generator materialised
+on what is assumably a chicken liver sandwich. For a measly 2 SAR
+a pop, this admittedly shady looking construction offers real value for money
+and is recommended for anyone passing through.
+
+Cost: 5/5
+
+Taste: 3/5
+
+Ease: 1/5
+
+[Location](http://www.openstreetmap.org/node/3475499279)
+
+
+## Yalla falafel
+
+Another place, whose full selection remains a mystery. However, upon
+close inspection, the menu does seem to have western numbers on it.
+Moreover, these numbers do indicate a bargain. Most of the arabic
+gibberish items cost no more than 10 SAR a piece. With a little of 
+haggling, the clerk was able to produce a few falafel sandwiches,
+with a hint of the Yalla falafel magic sauce.
+A small word of critique must be given to the bitter side taste in the
+sandwich.
+
+Cost: 4/5
+
+Taste: 3/5
+
+Ease: 2/5
+
+[Location](https://www.openstreetmap.org/node/3475499283)
