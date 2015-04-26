@@ -304,7 +304,7 @@ Ease: 2/5
 
 [Location](https://www.openstreetmap.org/node/3455830210)
 
-## The southern crescent
+## The Southern Crescent
 
 This joint in the heart of South Thuwal might not seem like
 the most easily approachable one, but don't let the appearance fool you.
@@ -329,7 +329,7 @@ Ease: 1/5
 [Location](http://www.openstreetmap.org/node/3475499279)
 
 
-## Yalla falafel
+## Yalla Falafel
 
 Another place, whose full selection remains a mystery. However, upon
 close inspection, the menu does seem to have western numbers on it.
@@ -347,3 +347,25 @@ Taste: 3/5
 Ease: 2/5
 
 [Location](https://www.openstreetmap.org/node/3475499283)
+
+## Fish
+
+Despite what the simplistic name implies, this place actually serves
+shrimp too. Traditional pick your fish and how you want it kind of place,
+with some seating options as well - at least if you happen to be a man.
+Enough so to qualify as one of the poshier
+places in Thuwal. Service is carried out with good English, but unfortunately
+the delivery of the goods takes quite a bit of time after the smooth ordering process.
+Enough so to allow the gentlemen at the deep frying place to ensure a chewy
+consistency on the shrimps. Also the shrimp from the oven suffers some handicaps,
+being a tad watery and lacking in flavour. A wise shrimp-eater will phone Fish in advance
+and show up on scene to pick up the order once it is ready, or simply divert to Siyad.
+Two people will fill up with fish at fish starting from around 100 SAR.
+
+Cost: 2/5
+
+Taste: 3/5
+
+Ease: 3/5
+
+[Location](http://www.openstreetmap.org/node/3479706077)
