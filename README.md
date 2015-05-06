@@ -375,7 +375,7 @@ Ease: 3/5
 The chicken place in town. For the same price as in [Al Shweya](#al-shweya),
 one gets rotisserie chicken that beats any competition in town.
 The fact that the sign has no English on it and that the door wishes
-you "Wellcom", should already tell the client that some trouble
+you "Wellcom" should already tell the client that some trouble
 with ordering can be expected. Fortunately, upon inspection
 this trouble worked to the advantage of Heena Heena boys and the
 rice that was not ordered was quite tasty.
