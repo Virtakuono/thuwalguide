@@ -368,4 +368,23 @@ Taste: 3/5
 
 Ease: 3/5
 
-[Location](http://www.openstreetmap.org/node/3479706077)
+[Location](https://www.openstreetmap.org/node/3479706077)
+
+## Heena Heena Chicken
+
+The chicken place in town. For the same price as in [Al Shweya](#al-shweya),
+one gets rotisserie chicken that beats any competition in town.
+The fact that the sign has no English on it and that the door wishes
+you "Wellcom", should already tell the client that some trouble
+with ordering can be expected. Fortunately, upon inspection
+this trouble worked to the advantage of Heena Heena boys and the
+rice that was not ordered was quite tasty.
+
+Cost: 3/5
+
+Taste: 4/5
+
+Ease: 4/5
+
+
+[Location](https://www.openstreetmap.org/node/3430566572)
