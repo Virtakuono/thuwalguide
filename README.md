@@ -13,7 +13,9 @@ written on the street with the exception of the places that have only
 arabic signs, in which case an arabic-sounding pseudonym that best
 describes the ambience of the restaurant in question has been assigned.
 
-
+In addition to this document, relevant location information is also added
+to [OpenStreetMap](https://www.openstreetmap.org/relation/5124477)
+in order to promote OSM and open data in general.
 
 ##Al Hamad restaurant
 
