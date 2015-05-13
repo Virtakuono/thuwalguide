@@ -390,3 +390,22 @@ Ease: 4/5
 
 
 [Location](https://www.openstreetmap.org/node/3430566572)
+
+## Aziziyat Habibi
+
+One of the few mid-range places in Thuwal. Atmosphere is kind and inviting,
+and in terms of ease, the place is a true double whammy: staff understands
+and speaks good english and in addition ordering food can be done pointing
+fingers at large and clear colour images that resemble the final product surprisingly much.
+Like in so many places, you might want to call your family physician if you
+are able to finish the rice. The chicken that goes along with the rice is not only
+good price but of good quality as well. Selection includes grilled, rotisserie and
+other chicken products. A decent sized meal for two costs around 30 SAR.
+
+Cost: 3/5
+
+Taste: 4/5
+
+Ease: 5/5
+
+[Location](https://www.openstreetmap.org/node/3515010107)
