@@ -2,5 +2,6 @@ Contents of the folder are released under Creative Commons Attribution-Sharealik
 
 More on the license in creativecommons.org:
 
-https://creativecommons.org/licenses/by-sa/3.0/deed
+[https://creativecommons.org/licenses/by-nc-sa/4.0/]
+
 
