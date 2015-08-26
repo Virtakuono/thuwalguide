@@ -409,3 +409,24 @@ Taste: 4/5
 Ease: 5/5
 
 [Location](https://www.openstreetmap.org/node/3515010107)
+
+
+##The Pink Cockroach
+
+Named after the little critter crawling on the floor and the colour
+of the tiling on the walls, this little restaurant on the side alley
+offers the Thuwali culinarist a fine treat of pakistani curry.
+Even a more demanding restaurant-goer will find the quality matching
+that of Al Hamad, one might even say that this place takes the lead
+among Pakistani joints in town, thanks to the fresh roti.
+A group of three inspectors ate large dishes of curry and a pile of
+delicious Roti for 42 SAR, and placing an order in English was
+possible with relative ease.
+
+Cost: 4/5
+
+Taste: 5/5
+
+Ease: 4/5
+
+[Location](http://www.openstreetmap.org/node/3475499284)
