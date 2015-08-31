@@ -430,3 +430,28 @@ Taste: 5/5
 Ease: 4/5
 
 [Location](http://www.openstreetmap.org/node/3475499284)
+
+##The King Fish
+
+This place has practically no customers and opens to the opposite
+direction than every restaurant in the neighbourhood is certainly a creepy sight
+at first. Perhaps this contributed the fact that King Fish was not at the top
+of the list to be tried out. However, an adventurous culinarist will be rewarded
+for going the extra mile and stepping into this peculiar establishment.
+
+The staff is not perfectly proficient in english, but luckily they have large colourful
+images of the dishes being served hung over the counter. The shrimp barely pales in comparison
+against the blue chip establishment in town, Al Siyad, and prices are more affordable too.
+A kilo of delicious shrimp will set one back some 70 SAR and if that is enough,
+one can always boost the menu in the true Hejazi way, with a massive pile of rice enough
+to feed a village; for next to nothing, of course.
+
+
+Cost: 3/5
+
+Taste: 4/5
+
+Ease: 4/5
+
+[Location](http://www.openstreetmap.org/node/3439620987)
+
