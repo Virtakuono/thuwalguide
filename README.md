@@ -455,3 +455,19 @@ Ease: 4/5
 
 [Location](http://www.openstreetmap.org/node/3439620987)
 
+## Marlin-S
+
+One of the bigger fish establishments in Thuwal, Marlin-S serves you
+shrimp and seafood of their own, or optionally prepares the fish you bring with you.
+The grilled fish has its own, interesting seasoning, but for shrimp and rice,
+it is recommended to drive further down the road to the fish king.
+Service is good, but costly, one should prepare to pay in excess of 100 SAR for
+a meal for two.
+
+Cost: 2/5
+
+Taste: 2/5
+
+Ease: 4/5
+
+[Location](http://www.openstreetmap.org/node/3725025444)
