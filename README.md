@@ -471,3 +471,25 @@ Taste: 2/5
 Ease: 4/5
 
 [Location](http://www.openstreetmap.org/node/3725025444)
+
+## Broast Al Baith
+
+The new Broast place in town, this restaurant is living the hype. At the time
+of testing, they even had a couple of posh westerners doing their jetsetting there.
+A friend of Al Baik will find this place worth a visit, although without
+the experience of packing oneself against sweaty bodies while waiting for
+your order in a hot room. This broast joint represents the
+"Whatever it is, if you can put some mushy fries on it, it'll get better"
+school of thought, as manifest in their chicken burgers and sandwiches.
+Fortunately, the fried chicken does not share the mushiness of the fries and burgers.
+One may comfortably place an order by pointing fingers at a selection of colourful
+photos of the dishes. A meal for one, with calories for two, will go for less than
+15 SAR.
+
+Cost: 4/5
+
+Taste: 2/5
+
+Ease: 4/5
+
+[Location](http://www.openstreetmap.org/node/3430569536)
