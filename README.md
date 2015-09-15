@@ -472,6 +472,26 @@ Ease: 4/5
 
 [Location](http://www.openstreetmap.org/node/3725025444)
 
+## Hammour Habibi
+
+One of the less shiny seafood establishments in town, Hammour
+Habibi offers the true Hejazi experience: Rice and seafood,
+with the classical on-the-floor seating.
+
+The shrimp ranks between Marlin-S and Fish King, leaving room
+for the tasty Hammour to fill the role of a signature dish.
+Service is not the fastest in town, but one can certainly place
+an order in english with relative ease. A filling meal for
+two goes for slightly above a hundred riyals.
+
+Cost: 2/5
+
+Taste: 3/5
+
+Ease: 3/5
+
+[Location](http://www.openstreetmap.org/way/335766248)
+
 ## Broast Al Baith
 
 The new Broast place in town, this restaurant is living the hype. At the time
@@ -493,3 +513,6 @@ Taste: 2/5
 Ease: 4/5
 
 [Location](http://www.openstreetmap.org/node/3430569536)
+
+
+
