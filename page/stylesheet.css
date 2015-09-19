@@ -24,6 +24,14 @@ width: 25px;
 height: 18px;
 }
 
+img.rating{
+border: 0px;
+float: left;
+padding: 5px 5px 5px 5px;
+margin-right: 5px;
+margin-bottom: 10px;
+}
+
 img.validatorPenisExtender{
 border: 0px;
 float: left;
@@ -51,6 +59,11 @@ margin-bottom: 10px;
 display: block;
 }
 
+table.rating th, table.rating td {
+font: 14px arial, sans-serif;
+color: rgb(69,51,40);
+}
+
 p.header{
 font-size: 24px;
 color: rgb(69,35,34);
@@ -75,13 +88,6 @@ svg.crescent{
 	height: 30px;	
 }
 
-path.cresc1{
-	d: "M12.6 0.8 A13.3 13.3 0 1 0 26.6 16.5 12 12 0 1 1 12.6 0.8z";
-	stroke: "#B19F6E";
-	stroke-width: 1px;
-	fill: "#B19F6E";
-}
-
 p.plaintext {
 color: rgb(69,51,40);	
 font: 14px arial, sans-serif;
@@ -90,17 +96,17 @@ margin: 0px 4px 4px 4px;
 
 a {
 text-decoration: none;
-color: rgb(91,183,75);
+color: rgb(69,51,40);
 }
 
 vlink {
 text-decoration: none;
-color: rgb(91,183,75);
+border-color: rgb(69,51,40);
 }
 
 alink {
 text-decoration: none;
-color: rgb(101,193,85);
+border-color: rgb(69,51,40);
 }
 
 div.text {
@@ -134,9 +140,6 @@ ul.plaintext{
 font-size: 11px;
 margin: 0px 4px 4px 4px;
 }
-
-
-
 
 p.pic {
 font-size: 11px;
@@ -556,6 +559,10 @@ margin: 0px 4px 4px 4px;
 .leaflet-popup-content p {
 	margin: 18px 0;
 	}
+.leaflet-popup-content a {
+    text-decoration: none;
+    color: rgb(69,51,40);
+        }
 .leaflet-popup-tip-container {
 	margin: 0 auto;
 	width: 40px;
