@@ -27,7 +27,22 @@ class restaurant():
         rv += '<tr><td>Ease</td><td><img class="rating" height="40" width="200" src="./%ds.svg" title="%d/5" label="%d/5" /></td></tr>\n'%(self.rating[2],self.rating[2],self.rating[2])
         rv += '</table>\n'
         rv += '</p>\n'
-        rv += '<p class="plaintext"><a href="%s">Location</a></p>'%(self.locationLink())
+        if self.tags:
+            rv += '<p class="plaintext">\n'
+            rv += 'Tags:\n'
+            for tag in self.tags:
+                rv += '%s,\n'%(tag,)
+            rv = '%s\n'%(rv[:-2])
+            rv += '</p>\n'
+        if self.phones:
+            rv += '<p class="plaintext">\n'
+            rv += 'Phone:\n'
+            for phone in self.phones:
+                rv += '<a href="tel:%s">%s</a>,\n'%(phone,phone)
+            rv = '%s\n'%(rv[:-2])
+            rv += '</p>\n'
+        rv += '<p class="plaintext"><a href="%s">Location</a></p>\n'%(self.locationLink())
+        #rv += '<hr />\n'
         return rv
 
     def locationLink(self):
@@ -187,8 +202,40 @@ def getRestaurants(fn='restaurants.tsv'):
                 truncLine = truncLine[tabLoc+1:]
             queryResult = queryID(int(tID))
             if queryResult.ways:
-                latLon = wayCenter(queryResult.ways[0])
-                rv.append(restaurant(name=tName,lat=latLon[0],lon=latLon[1],descPara=tRevParas,tags=[],rating=(tTaste,tCost,tEase),phones=[]))
+                tehWay = queryResult.ways[0]
+                latLon = wayCenter(tehWay)
+                keys = tehWay.tags.keys()
+                phones = []
+                if u'phone' in keys:
+                    tempString = str(tehNode.tags[u'phone'])
+                    if ';' in tempString:
+                        while ';' in tempString:
+                            loc = tempString.find(';')
+                            phones.append('%s'%(tempString[:loc]))
+                            tempString = '%s'%(tempString[loc+1])
+                        phones.append('%s'%(tempString))
+                    else:
+                        phones.append('%s'%(tempString))
+                tagsAdd = []
+                if u'cuisine' in keys:
+                    cuisineValue = str(tehNode.tags[u'cuisine']).lower()
+                    if 'pakistani' in cuisineValue:
+                        tagsAdd.append('Pakistani')
+                    if 'seafood' in cuisineValue:
+                        tagsAdd.append('Seafood')
+                    if 'chicken' in cuisineValue:
+                        tagsAdd.append('Chicken')
+                    if 'turkish' in cuisineValue:
+                        tagsAdd.append('Turkish')
+                    if 'kebab' in cuisineValue:
+                        tagsAdd.append('Shwarma')
+                    if u'family_seating' in keys:
+                        if str(tehNode.tags[u'family_seating']).lower() == 'yes':
+                            tagsAdd.append('Family seating')
+                    if u'takeaway' in keys:
+                        if str(tehNode.tags[u'takeaway']).lower() == 'only':
+                            tagsAdd.append('Takeaway')
+                rv.append(restaurant(name=tName,lat=latLon[0],lon=latLon[1],descPara=tRevParas,tags=tagsAdd,rating=(tTaste,tCost,tEase),phones=phones))
             else:
                 try:
                     tehNode = queryResult.nodes[0]
@@ -197,11 +244,31 @@ def getRestaurants(fn='restaurants.tsv'):
                     if u'phone' in keys:
                         tempString = str(tehNode.tags[u'phone'])
                         while ';' in tempString:
-                            loc = tempString.find(';')
-                            phones.append('%s'%(tempString[:loc]))
-                            tempString = '%s'%(tempString[loc+1])
-                        phones.append('%s'%(tempString))
-                    rv.append(restaurant(name=tName,lat=float(tehNode.lat),lon=float(tehNode.lon),descPara=tRevParas,tags=[],rating=(tTaste,tCost,tEase),phones=[]))
+                            phones.append(tempString[:tempString.find(';')])
+                            tempString=tempString[tempString.find(';')+1:]
+                            while tempString[0].isspace():
+                                tempString = tempString[1:]
+                        phones.append(tempString)
+                    tagsAdd = []
+                    if u'cuisine' in keys:
+                        cuisineValue = str(tehNode.tags[u'cuisine']).lower()
+                        if 'pakistani' in cuisineValue:
+                            tagsAdd.append('Pakistani')
+                        if 'seafood' in cuisineValue:
+                            tagsAdd.append('Seafood')
+                        if 'chicken' in cuisineValue:
+                            tagsAdd.append('Chicken')
+                        if 'turkish' in cuisineValue:
+                            tagsAdd.append('Turkish')
+                        if 'kebab' in cuisineValue:
+                            tagsAdd.append('Shwarma')
+                    if u'family_seating' in keys:
+                        if str(tehNode.tags[u'family_seating']).lower() == 'yes':
+                            tagsAdd.append('Family seating')
+                    if u'takeaway' in keys:
+                        if str(tehNode.tags[u'takeaway']).lower() == 'only':
+                            tagsAdd.append('Takeaway')
+                    rv.append(restaurant(name=tName,lat=float(tehNode.lat),lon=float(tehNode.lon),descPara=tRevParas,tags=tagsAdd,rating=(tTaste,tCost,tEase),phones=phones))
                 except IndexError:
                     pass
     return rv

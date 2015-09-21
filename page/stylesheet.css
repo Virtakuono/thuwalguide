@@ -15,6 +15,15 @@ margin: 1px 1px 1px 1px;
 display: inline;
 }
 
+hr {
+color: #B19F6E;
+height:1px;
+width: 400 px;
+border:none;
+margin-top:0px;
+margin-bottom:0px;
+}
+
 img.flag{
 border: 0px;
 float: right;
