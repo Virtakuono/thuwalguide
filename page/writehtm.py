@@ -14,6 +14,9 @@ class restaurant():
         self.rating = rating
         self.phones = phones
         self.identifier = self.name+':('+str(self.lat)+str(self.lon)+')'
+        for foo in range(len(self.identifier)):
+            if not self.identifier[foo].isalnum():
+                self.identifier = self.identifier[:foo]+'_'+self.identifier[foo+1:]
 
     def htmlstr(self):
         rv = '<a id="%s"></a>'%(self.identifier,)
