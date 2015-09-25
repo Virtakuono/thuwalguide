@@ -200,6 +200,8 @@ def getRestaurants(fn='restaurants.tsv'):
                 if tabLoc:
                     tRevParas.append(truncLine[:tabLoc])
                 truncLine = truncLine[tabLoc+1:]
+            if truncLine:
+                tRevParas.append(truncLine)
             queryResult = queryID(int(tID))
             if queryResult.ways:
                 tehWay = queryResult.ways[0]
