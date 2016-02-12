@@ -2,10 +2,11 @@
 
 import overpy
 import time
+import os
 
 class restaurant():
 
-    def __init__(self,name='',lat=0.0,lon=0.0,descPara=[],tags=[],rating=(3,3,3),phones=[]):
+    def __init__(self,name='',lat=0.0,lon=0.0,descPara=[],tags=[],rating=(3,3,3),phones=[],idNum=0,numPics=0):
         self.name = name
         self.lat = lat
         self.lon = lon
@@ -13,14 +14,23 @@ class restaurant():
         self.tags = tags
         self.rating = rating
         self.phones = phones
+        self.idNum = idNum
+        self.numPics = numPics
         self.identifier = self.name+':('+str(self.lat)+str(self.lon)+')'
         for foo in range(len(self.identifier)):
             if not self.identifier[foo].isalnum():
                 self.identifier = self.identifier[:foo]+'_'+self.identifier[foo+1:]
 
     def htmlstr(self):
-        rv = '<a id="%s"></a>'%(self.identifier,)
+        print(self.numPics)
+        rv = '<a id="%s"></a>\n'%(self.identifier,)
         rv += '<p class="header2">%s</p>\n'%(self.name)
+        if self.numPics:
+            for foo in range(1,self.numPics):
+                print('kikkeli!!!!')
+                smallPhoto = './pics/%04d_%d_s.jpg'%(self.idNum,foo)
+                fullPhoto = './pics/%04d_%d.jpg'%(self.idNum,foo)
+                rv += '<p class="plaintext"><a href="%s"><img class="kayakphoto" src="%s" /></a></p>\n'%(fullPhoto,smallPhoto)
         for para in self.descPara:
             rv += '<p class="plaintext">%s</p>\n'%(para)
         rv += '<p class="plaintext">\n'
@@ -72,6 +82,7 @@ def printWebPage(restaurants=[],outputFile='index.htm',title='Culinarist\'s guid
     rv += ''
     rv += '<div class="map" id="map" style="width: 598px; height: 400px"></div>\n'
     for restaurant in restaurants:
+        print('kikkeli')
         rv+= restaurant.htmlstr()
 
     rv += '<p class="plaintext">Page created on %s. Restaurant locations from <a href="https://www.openstreetmap.org/">OSM</a>. Other content by Juho H&auml;pp&ouml;l&auml; and Grace Gruendler. Available under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>'%(time.ctime())
@@ -176,6 +187,7 @@ def getRestaurants(fn='restaurants.tsv'):
         print('Processing line %4d of input file %s ...'%(lineCounter,fn))
         lineCounter+=1
         if len(line)>4:
+            print('moi')
             if line[-1] =='\n':
                 truncLine = line[:-1]
             else:
@@ -205,6 +217,16 @@ def getRestaurants(fn='restaurants.tsv'):
                 truncLine = truncLine[tabLoc+1:]
             if truncLine:
                 tRevParas.append(truncLine)
+            print('vittu')
+            picId =1
+            thumbNailSize = 100
+            pixelCount = 500*500
+            while '%04d_%d.jpg'%(int(tID),picId) in os.listdir('./pics/'):
+           	    command1 =  'convert ./pics/%04d_%d.jpg -trim +repage -resize %dx%d -gravity center -background none -extent %dx%d ./pics/%04d_%d_t.jpg'%(int(tID),picId,thumbNailSize,thumbNailSize,thumbNailSize,thumbNailSize,int(tID),picId)
+           	    command1 = 'convert ./pics/%04d_%d.jpg -resize %d@ ./pics/%04d_%d_s.jpg'%(int(tID),picId,pixelCount,int(tID),picId)
+           	    os.system(command1)
+           	    picId += 1
+            ### query from osm database
             queryResult = queryID(int(tID))
             if queryResult.ways:
                 tehWay = queryResult.ways[0]
@@ -240,7 +262,8 @@ def getRestaurants(fn='restaurants.tsv'):
                     if u'takeaway' in keys:
                         if str(tehNode.tags[u'takeaway']).lower() == 'only':
                             tagsAdd.append('Takeaway')
-                rv.append(restaurant(name=tName,lat=latLon[0],lon=latLon[1],descPara=tRevParas,tags=tagsAdd,rating=(tTaste,tCost,tEase),phones=phones))
+                print(picId,int(tID),'molo')
+                rv.append(restaurant(name=tName,lat=latLon[0],lon=latLon[1],descPara=tRevParas,tags=tagsAdd,rating=(tTaste,tCost,tEase),phones=phones,idNum=int(tID),numPics=picId-1))
             else:
                 try:
                     tehNode = queryResult.nodes[0]
@@ -273,7 +296,8 @@ def getRestaurants(fn='restaurants.tsv'):
                     if u'takeaway' in keys:
                         if str(tehNode.tags[u'takeaway']).lower() == 'only':
                             tagsAdd.append('Takeaway')
-                    rv.append(restaurant(name=tName,lat=float(tehNode.lat),lon=float(tehNode.lon),descPara=tRevParas,tags=tagsAdd,rating=(tTaste,tCost,tEase),phones=phones))
+                    print(picId,int(tID),'molo')
+                    rv.append(restaurant(name=tName,lat=float(tehNode.lat),lon=float(tehNode.lon),descPara=tRevParas,tags=tagsAdd,rating=(tTaste,tCost,tEase),phones=phones,idNum=int(tID),numPics=picId-1))
                 except IndexError:
                     pass
     return rv
