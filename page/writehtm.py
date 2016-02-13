@@ -17,20 +17,20 @@ class restaurant():
         self.idNum = idNum
         self.numPics = numPics
         self.identifier = self.name+':('+str(self.lat)+str(self.lon)+')'
+        if self.idNum:
+            self.identifier = 'restaurant%04d'%(self.idNum)
         for foo in range(len(self.identifier)):
             if not self.identifier[foo].isalnum():
                 self.identifier = self.identifier[:foo]+'_'+self.identifier[foo+1:]
 
     def htmlstr(self):
-        print(self.numPics)
+
         rv = '<a id="%s"></a>\n'%(self.identifier,)
         rv += '<p class="header2">%s</p>\n'%(self.name)
-        if self.numPics:
-            for foo in range(1,self.numPics):
-                print('kikkeli!!!!')
-                smallPhoto = './pics/%04d_%d_s.jpg'%(self.idNum,foo)
-                fullPhoto = './pics/%04d_%d.jpg'%(self.idNum,foo)
-                rv += '<p class="plaintext"><a href="%s"><img class="kayakphoto" src="%s" /></a></p>\n'%(fullPhoto,smallPhoto)
+        #if self.numPics:
+        #    smallPhoto = './pics/%04d_%d_s.jpg'%(self.idNum,1)
+        #    fullPhoto = './pics/%04d_%d.jpg'%(self.idNum,1)
+        #    rv += '<p class="plaintext">\n<img class="kayakphoto" src="%s"/>\n</p>\n'%(smallPhoto,)
         for para in self.descPara:
             rv += '<p class="plaintext">%s</p>\n'%(para)
         rv += '<p class="plaintext">\n'
@@ -40,6 +40,14 @@ class restaurant():
         rv += '<tr><td>Ease</td><td><img class="rating" height="40" width="200" src="./%ds.svg" title="%d/5" label="%d/5" /></td></tr>\n'%(self.rating[2],self.rating[2],self.rating[2])
         rv += '</table>\n'
         rv += '</p>\n'
+        
+        if self.numPics:
+            rv += '<p class="plaintext">\n'
+            for foo in range(1,self.numPics+1):
+                thumbPhoto = './pics/%04d_%d_t.jpg'%(self.idNum,foo)
+                fullPhoto = './pics/%04d_%d.jpg'%(self.idNum,foo)
+                rv += '<a href="%s" target="_blank"><img class="thumb" src="%s" /></a>'%(fullPhoto,thumbPhoto)
+            rv += '</p>\n'
         if self.tags:
             rv += '<p class="plaintext">\n'
             rv += 'Tags:\n'
@@ -54,6 +62,13 @@ class restaurant():
                 rv += '<a href="tel:%s">%s</a>,\n'%(phone,phone)
             rv = '%s\n'%(rv[:-2])
             rv += '</p>\n'
+            
+        #if self.numPics:
+        #    for foo in range(1,self.numPics+1):
+        #        smallPhoto = './pics/%04d_%d_s.jpg'%(self.idNum,foo)
+        #        fullPhoto = './pics/%04d_%d.jpg'%(self.idNum,foo)
+        #        rv += '<p class="plaintext"><a href="%s"><img class="kayakphoto" src="%s" /></a></p>\n'%(fullPhoto,smallPhoto)
+
         rv += '<p class="plaintext"><a href="%s">Location</a></p>\n'%(self.locationLink())
         #rv += '<hr />\n'
         return rv
@@ -82,7 +97,6 @@ def printWebPage(restaurants=[],outputFile='index.htm',title='Culinarist\'s guid
     rv += ''
     rv += '<div class="map" id="map" style="width: 598px; height: 400px"></div>\n'
     for restaurant in restaurants:
-        print('kikkeli')
         rv+= restaurant.htmlstr()
 
     rv += '<p class="plaintext">Page created on %s. Restaurant locations from <a href="https://www.openstreetmap.org/">OSM</a>. Other content by Juho H&auml;pp&ouml;l&auml; and Grace Gruendler. Available under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>'%(time.ctime())
@@ -187,7 +201,6 @@ def getRestaurants(fn='restaurants.tsv'):
         print('Processing line %4d of input file %s ...'%(lineCounter,fn))
         lineCounter+=1
         if len(line)>4:
-            print('moi')
             if line[-1] =='\n':
                 truncLine = line[:-1]
             else:
@@ -217,15 +230,15 @@ def getRestaurants(fn='restaurants.tsv'):
                 truncLine = truncLine[tabLoc+1:]
             if truncLine:
                 tRevParas.append(truncLine)
-            print('vittu')
             picId =1
             thumbNailSize = 100
             pixelCount = 500*500
             while '%04d_%d.jpg'%(int(tID),picId) in os.listdir('./pics/'):
-           	    command1 =  'convert ./pics/%04d_%d.jpg -trim +repage -resize %dx%d -gravity center -background none -extent %dx%d ./pics/%04d_%d_t.jpg'%(int(tID),picId,thumbNailSize,thumbNailSize,thumbNailSize,thumbNailSize,int(tID),picId)
-           	    command1 = 'convert ./pics/%04d_%d.jpg -resize %d@ ./pics/%04d_%d_s.jpg'%(int(tID),picId,pixelCount,int(tID),picId)
-           	    os.system(command1)
-           	    picId += 1
+                command1 =  'convert ./pics/%04d_%d.jpg -trim +repage -resize %dx%d -gravity center -background none -extent %dx%d ./pics/%04d_%d_t.jpg'%(int(tID),picId,thumbNailSize,thumbNailSize,thumbNailSize,thumbNailSize,int(tID),picId)
+                command2 = 'convert ./pics/%04d_%d.jpg -resize %d@ ./pics/%04d_%d_s.jpg'%(int(tID),picId,pixelCount,int(tID),picId)
+                os.system(command1)
+                os.system(command2)
+                picId += 1
             ### query from osm database
             queryResult = queryID(int(tID))
             if queryResult.ways:
@@ -262,7 +275,6 @@ def getRestaurants(fn='restaurants.tsv'):
                     if u'takeaway' in keys:
                         if str(tehNode.tags[u'takeaway']).lower() == 'only':
                             tagsAdd.append('Takeaway')
-                print(picId,int(tID),'molo')
                 rv.append(restaurant(name=tName,lat=latLon[0],lon=latLon[1],descPara=tRevParas,tags=tagsAdd,rating=(tTaste,tCost,tEase),phones=phones,idNum=int(tID),numPics=picId-1))
             else:
                 try:
@@ -296,7 +308,6 @@ def getRestaurants(fn='restaurants.tsv'):
                     if u'takeaway' in keys:
                         if str(tehNode.tags[u'takeaway']).lower() == 'only':
                             tagsAdd.append('Takeaway')
-                    print(picId,int(tID),'molo')
                     rv.append(restaurant(name=tName,lat=float(tehNode.lat),lon=float(tehNode.lon),descPara=tRevParas,tags=tagsAdd,rating=(tTaste,tCost,tEase),phones=phones,idNum=int(tID),numPics=picId-1))
                 except IndexError:
                     pass
