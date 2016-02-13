@@ -1,0 +1,145 @@
+#!/usr/bin/python
+
+import overpy
+
+class restaurant():
+
+    def __init__(self,name='',lat=0.0,lon=0.0,descPara=[],tags=[],rating=(3,3,3),phones=[]):
+        self.name = name
+        self.lat = lat
+        self.lon = lon
+        self.descPara = descPara
+        self.tags = tags
+        self.rating = rating
+        self.phones = phones
+
+    def htmlstr(self):
+        rv =  '<p class="header2">%s</p>\n'%(self.name)
+        for para in self.descPara:
+            rv += '<p class="plaintext">%s</p>\n'%(para)
+        rv += '<p class="plaintext">\n'
+        rv += '<table class="rating">\n'
+        rv += '<tr><td>Taste</td><td><img class="rating" height="40" width="200" src="./%ds.svg" title="%d/5" label="%d/5" /></td></tr>\n'%(self.rating[0],self.rating[0],self.rating[0])
+        rv += '<tr><td>Cost</td><td><img class="rating" height="40" width="200" src="./%ds.svg" title="%d/5" label="%d/5" /></td></tr>\n'%(self.rating[1],self.rating[1],self.rating[1])
+        rv += '<tr><td>Ease</td><td><img class="rating" height="40" width="200" src="./%ds.svg" title="%d/5" label="%d/5" /></td></tr>\n'%(self.rating[2],self.rating[2],self.rating[2])
+        rv += '</table>\n'
+        rv += '</p>\n'
+
+def printWebPage(output='index.htm')
+
+def overpassQuery(ID=1,e=37.0,n=24.0,s=20.0,w=40.0):
+    valueString = '%04d'%(ID,)
+    keyString = 'thuwalguide_id'
+    rv = '<osm-script output="json" timeout="25">\n'
+    rv += '<union into="_">\n'
+    rv += '<query into="_" type="node">\n'
+    rv += '<has-kv k="%s" modv="" v="%s"/>\n'%(keyString,valueString)
+    rv += '<bbox-query e="%f" into="_" n="%f" s="%f" w="%f"/>\n'%(e,n,s,w)
+    rv += '</query>\n'
+    rv += '<query into="_" type="way">\n'
+    rv += '<has-kv k="%s" modv="" v="%s"/>\n'%(keyString,valueString)
+    rv += '<bbox-query e="%f" into="_" n="%f" s="%f" w="%f"/>\n'%(e,n,s,w)
+    rv += '</query>\n'
+    rv += '<query into="_" type="relation">\n'
+    rv += '<has-kv k="%s" modv="" v="%s"/>\n'%(keyString,valueString)
+    rv += '<bbox-query e="%f" into="_" n="%f" s="%f" w="%f"/>\n'%(e,n,s,w)
+    rv += '</query>\n'
+    rv += '</union>\n'
+    rv += '<print e="" from="_" geometry="skeleton" limit="" mode="body" n="" order="id" s="" w=""/>\n'
+    rv += '<recurse from="_" into="_" type="down"/>\n'
+    rv += '<print e="" from="_" geometry="skeleton" limit="" mode="skeleton" n="" order="quadtile" s="" w=""/>\n'
+    rv += '</osm-script>\n'
+    return rv
+
+def overpassQuery(ID=1,w=37.0,e=40.0,n=24.0,s=19.0):
+    rv = '<osm-script output="json" timeout="25">\n'
+    rv +=  '<union into="_">\n'
+    rv +=   '<query into="_" type="node">\n'
+    rv +=      '<has-kv k="thuwalguide_id" modv="" v="%04d"/>\n'%(ID,)
+    rv +=       '<bbox-query e="%f" into="_" n="%f" s="%f" w="%f"/>\n'%(e,n,s,w)
+    rv +=     '</query>\n'
+    rv +=     '<query into="_" type="way">\n'
+    rv +=       '<has-kv k="thuwalguide_id" modv="" v="%04d"/>\n'%(ID,)
+    rv +=       '<bbox-query e="%f" into="_" n="%f" s="%f" w="%f"/>\n'%(e,n,s,w)
+    rv +=     '</query>\n'
+    rv +=   '</union>\n'
+    rv +=  '<print e="" from="_" geometry="skeleton" limit="" mode="body" n="" order="id" s="" w=""/>\n'
+    rv +=  '<recurse from="_" into="_" type="down"/>\n'
+    rv +=  '<print e="" from="_" geometry="skeleton" limit="" mode="skeleton" n="" order="quadtile" s="" w=""/>\n'
+    rv += '</osm-script>\n'
+    return rv
+
+def wayCenter(way):
+    maxLat = float(way.nodes[0].lat)
+    maxLon = float(way.nodes[0].lon)
+    minLat = 1*maxLat
+    minLon = 1*maxLon
+    for node in way.nodes[1:]:
+        la = float(node.lat)
+        lo = float(node.lon)
+        maxLat = max(maxLat,la)
+        minLat = min(minLat,la)
+        maxLon = max(maxLon,lo)
+        minLon = min(minLon,lo)
+    return (0.5*(maxLat+minLat),0.5*(maxLon+minLon))
+
+queryID = lambda ID: overpy.Overpass().query(overpassQuery(ID))
+
+def getRestaurants(fn='restaurants.tsv'):
+    f = open(fn,'r')
+    lines = f.readlines()[1:]
+    f.close()
+    rv = []
+    lineCounter = 1
+    for line in lines[:6]:
+        print('Processing line %4d of input file %s ...'%(lineCounter,fn))
+        lineCounter+=1
+        if len(line)>4:
+            if line[-1] =='\n':
+                truncLine = line[:-1]
+            else:
+                truncLine = line
+            if truncLine[-1] == '\r':
+                truncLine = truncLine[:-1]
+            tabLoc = truncLine.find('\t')
+            tName = truncLine[:tabLoc]
+            truncLine = truncLine[tabLoc+1:]
+            tabLoc = truncLine.find('\t')
+            tID = truncLine[:tabLoc]
+            truncLine = truncLine[tabLoc+1:]
+            tabLoc = truncLine.find('\t')
+            tTaste = truncLine[:tabLoc]
+            truncLine = truncLine[tabLoc+1:]
+            tabLoc = truncLine.find('\t')
+            tCost = truncLine[:tabLoc]
+            truncLine = truncLine[tabLoc+1:]
+            tabLoc = truncLine.find('\t')
+            tEase = truncLine[:tabLoc]
+            truncLine = truncLine[tabLoc+1:]
+            tRevParas = []
+            while '\t' in truncLine:
+                tabLoc = truncLine.find('\t')
+                if tabLoc:
+                    tRevParas.append(truncLine[:tabLoc])
+                truncLine = truncLine[tabLoc+1:]
+            queryResult = queryID(int(tID))
+            if queryResult.ways:
+                latLon = wayCenter(queryResult.ways[0])
+                rv.append(restaurant(name=tName,lat=latlon[0],lon=latlon[1],descPara=tRevParas,tags=[],rating=(tTaste,tCost,tEase),phones=[]))
+            else:
+                try:
+                    tehNode = queryResult.nodes[0]
+                    keys = tehNode.tags.keys()
+                    phones = []
+                    if u'phone' in keys:
+                        tempString = str(tehNode.tags[u'phone'])
+                        while ';' in tempString:
+                            loc = tempString.find(';')
+                            phones.append('%s'%(tempString[:loc]))
+                            tempString = '%s'%(tempString[loc+1])
+                        phones.append('%s'%(tempString))
+                    rv.append(restaurant(name=tName,lat=float(tehNode.lat),lon=float(tehNode.lon),descPara=tRevParas,tags=[],rating=(tTaste,tCost,tEase),phones=[]))
+                except IndexError:
+                    pass
+    return rv
+    

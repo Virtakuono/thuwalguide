@@ -27,10 +27,10 @@ class restaurant():
 
         rv = '<a id="%s"></a>\n'%(self.identifier,)
         rv += '<p class="header2">%s</p>\n'%(self.name)
-        #if self.numPics:
-        #    smallPhoto = './pics/%04d_%d_s.jpg'%(self.idNum,1)
-        #    fullPhoto = './pics/%04d_%d.jpg'%(self.idNum,1)
-        #    rv += '<p class="plaintext">\n<img class="kayakphoto" src="%s"/>\n</p>\n'%(smallPhoto,)
+        if self.numPics:
+            smallPhoto = './pics/%04d_%d_s.jpg'%(self.idNum,1)
+            fullPhoto = './pics/%04d_%d.jpg'%(self.idNum,1)
+            rv += '<p class="plaintext">\n<img class="kayakphoto" src="%s"/>\n</p>\n'%(smallPhoto,)
         for para in self.descPara:
             rv += '<p class="plaintext">%s</p>\n'%(para)
         rv += '<p class="plaintext">\n'
