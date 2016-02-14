@@ -234,7 +234,7 @@ def getRestaurants(fn='restaurants.tsv'):
             thumbNailSize = 100
             pixelCount = 500*500
             while '%04d_%d.jpg'%(int(tID),picId) in os.listdir('./pics/'):
-                command1 =  'convert ./pics/%04d_%d.jpg -trim +repage -resize %dx%d -gravity center -background none -extent %dx%d ./pics/%04d_%d_t.jpg'%(int(tID),picId,thumbNailSize,thumbNailSize,thumbNailSize,thumbNailSize,int(tID),picId)
+                command1 =  'convert ./pics/%04d_%d.jpg -thumbnail %dx%d^ -gravity center -extent %dx%d ./pics/%04d_%d_t.jpg'%(int(tID),picId,thumbNailSize,thumbNailSize,thumbNailSize,thumbNailSize,int(tID),picId)
                 command2 = 'convert ./pics/%04d_%d.jpg -resize %d@ ./pics/%04d_%d_s.jpg'%(int(tID),picId,pixelCount,int(tID),picId)
                 os.system(command1)
                 os.system(command2)
