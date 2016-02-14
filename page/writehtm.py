@@ -92,7 +92,7 @@ def printWebPage(restaurants=[],outputFile='index.htm',title='Culinarist\'s guid
     rv += '<p class="plaintext">\n'
     counter = 1
     for restaurant in restaurants:
-        rv += '<a href="#%s">%d. %s</a><br />'%(restaurant.identifier,counter,restaurant.name)
+        rv += '<a href="#%s">%d. %s</a><br />\n'%(restaurant.identifier,counter,restaurant.name)
         counter += 1
     rv += ''
     rv += '<div class="map" id="map" style="width: 598px; height: 400px"></div>\n'
