@@ -86,7 +86,7 @@ def printWebPage(restaurants=[],outputFile='index.htm',title='Culinarist\'s guid
     rv += '<body background="./bghuge_small.jpg">\n'
     rv += '<div class="text">\n'
     rv += '<p class="themainheader">%s</p>\n'%(title,)
-    rv += '<p class="plaintext">Thuwal is one of the most underexploited and underrated tourist destinations of Hejaz. This magnificent small town offers dozens of options for the traveller keen on buying electronics, praying, having their hair cut and, well, stuff. This page lists my experiences in Thuwal and tries to pay tribute to the sometimes absurd but delicious restaurants therein..</p>\n'
+    rv += '<p class="plaintext">Thuwal is one of the most underexploited and underrated tourist destinations of Hejaz. This magnificent small town offers dozens of options for the traveller keen on buying electronics, praying, having their hair cut and, well, stuff. This page lists some of my experiences in Thuwal and tries to pay tribute to the sometimes absurd but delicious restaurants therein.</p>\n'
     rv += '<p class="plaintext">All names are reported verbatim as they are written on the street with the exception of the places that have only arabic signs, in which case an arabic-sounding pseudonym that best describes the ambience of the restaurant in question has been assigned.</p>\n'
     rv += '<p class="header2">Restaurants</p>\n'
     rv += '<p class="plaintext">\n'
