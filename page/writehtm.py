@@ -189,7 +189,15 @@ def wayCenter(way):
         minLon = min(minLon,lo)
     return (0.5*(maxLat+minLat),0.5*(maxLon+minLon))
 
-queryID = lambda ID: overpy.Overpass().query(overpassQuery(ID))
+def queryID(ID,count=0):
+    if count<10:
+        try:
+            return overpy.Overpass().query(overpassQuery(ID))
+        except Exception:
+            print('   HTTPLib gave bad status line, retrying ...')
+            time.sleep(2)
+            return queryID(ID,count=count+1)
+    return overpy.Overpass().query(overpassQuery(ID))
 
 def getRestaurants(fn='restaurants.tsv'):
     f = open(fn,'r')
